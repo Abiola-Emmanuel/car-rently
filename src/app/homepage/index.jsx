@@ -76,11 +76,11 @@ const HomePage = () => {
 
         <div className="hero-text-left" >
           <h2>Find your perfect car.</h2>
-          <p>Experience the ultimate freedom of <br /> choice with Company - tailor your <br /> adventure by choosing from our <br /> premium fleet of vehicles...</p>
+          <p>Choose from our modern fleet, economy cars, SUVs and luxury models, with clear <br /> pricing, flexible add‑ons and convenient pickup or delivery options.</p>
         </div>
 
         <div className="hero-text-right" >
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Illum maxime nulla praesentium cum qui atqu...</p>
+          <p>Well-maintained vehicles, 24/7 roadside assistance and friendly <br /> support to keep your trip smooth and stress-free.</p>
         </div>
 
         <div className="hero-actions">
@@ -232,7 +232,7 @@ const HomePage = () => {
 
       {/* STEPS */}
 
-      <div className="steps">
+      <div className="steps">,
 
         <div className="overlay"></div>
 
@@ -243,7 +243,7 @@ const HomePage = () => {
 
           <div>
             <p className="title">Choose a vehicle</p>
-            <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <p className="txt">Browse by size, fuel type and features pick the vehicle that fits your trip and budget.</p>
           </div>
         </div>
 
@@ -255,7 +255,7 @@ const HomePage = () => {
 
           <div>
             <p className="title">Pick location & date</p>
-            <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <p className="txt">Select pickup and drop-off locations and exact dates choose delivery to your door or collect at our office.</p>
           </div>
 
         </div>
@@ -268,7 +268,7 @@ const HomePage = () => {
 
           <div>
             <p className="title">Make a booking</p>
-            <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <p className="txt">Reserve securely online with card payment — receive instant confirmation and rental agreement details.</p>
           </div>
 
         </div>
@@ -281,7 +281,7 @@ const HomePage = () => {
 
           <div>
             <p className="title">Sit back & relax</p>
-            <p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            <p className="txt">Pick up your car and enjoy the trip — we're available 24/7 for support, changes or roadside help.</p>
           </div>
 
         </div>
@@ -338,16 +338,16 @@ const HomePage = () => {
             <Accordion
               id="accordion-left"
               questionName1="How do i get started with Car Rental?"
-              questionAnswer1="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer1="Search our fleet, choose your dates and vehicle, then complete your booking online. Bring a valid driver’s license and the card used for booking at pickup."
 
               questionName2="Can i rent a car with debit card?"
-              questionAnswer2="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer2="Yes, we accept debit cards for most rentals. Some vehicles or promotions may require a credit card or additional ID. Check the payment requirements on the vehicle page."
 
               questionName3="What kind of Car Rental do i need?"
-              questionAnswer3="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer3="Choose by passenger count, luggage needs and road conditions: compact for city driving, SUV for families or rough roads, and luxury for events or business travel."
 
               questionName4="What is a rental car security deposit"
-              questionAnswer4="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer4="A refundable hold placed on your card to cover incidents or damages. The amount depends on the vehicle class and is released after vehicle inspection when the rental ends."
             />
 
           </div>
@@ -357,16 +357,16 @@ const HomePage = () => {
               id="accordion-right"
 
               questionName1="What is a rental car security deposit?"
-              questionAnswer1="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer1="A refundable hold placed on your payment method to cover potential damages or fines. The exact amount varies by vehicle class and is released after inspection."
 
               questionName2="Can i cancel or modify my reservation?"
-              questionAnswer2="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer2="Yes, you can cancel or modify online. Free cancellation is available up to 48 hours before pickup for most rates; changes after that may incur fees or rate differences."
 
               questionName3="Can i cancel or modify my reservation?"
-              questionAnswer3="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer3="If you need to return the car early, contact support, refunds depend on the rate type. We can adjust your booking and invoice any applicable differences."
 
               questionName4="Is it possible to extend my rental period?"
-              questionAnswer4="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+              questionAnswer4="Yes, extensions are possible when the vehicle is available. Extend via your booking page or contact us; additional days are charged at the current daily rate."
             />
           </div>
 
