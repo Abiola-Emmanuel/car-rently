@@ -44,6 +44,17 @@ const HomePage = () => {
     setCurrentYear(new Date().getFullYear());
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [menuOpen]);
+
   const handleCloseMenu = () => {
     setMenuOpen(false);
   };
