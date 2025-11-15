@@ -1,7 +1,8 @@
 'use client';
 import CarCard from "@/components/CarCard";
 import "../globals.css";
-import { FaTrophy, FaRoad, FaTag, FaMapPin, FaQuoteRight } from "react-icons/fa";
+import { FaTrophy, FaRoad, FaTag, FaMapPin, FaQuoteRight, FaInstagram, FaFacebook, FaDiscord, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import ReviewerCard from "@/components/ReviewerCard";
 import Accordion from "@/components/Accordion";
@@ -408,16 +409,20 @@ const HomePage = () => {
         <div className="foot-left">
           <div className="fl-top">
             <h2>Car Rental</h2>
-            <p>Where quality meets affordability. We understand the importance of a smooth and enjoyable journey without the burden of excessive costs. That's why we have meticulously crafted our offerings to provide you with top-notch vehicles at minimum expense.</p>
+            {/* <p>Where quality meets affordability. We understand the importance of a smooth and enjoyable journey without the burden of excessive costs. That's why we have meticulously crafted our offerings to provide you with top-notch vehicles at minimum expense.</p> */}
           </div>
 
           <div className="year">
-            &copy; {currentYear} Car rental. All rights reserved.
+            <p>&copy; {currentYear} Car rental. All rights reserved.</p>
           </div>
         </div>
 
         <div className="foot-right">
-
+          <a href="#"> <FaInstagram /> </a>
+          <a href="#"> <FaXTwitter /> </a>
+          <a href="#"> <FaFacebook /> </a>
+          <a href="#"> <FaDiscord /> </a>
+          <a href="#"> <FaTiktok /> </a>
         </div>
 
       </footer>
