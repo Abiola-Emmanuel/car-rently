@@ -47,7 +47,7 @@ const HomePage = () => {
       {/* HERO */}
 
       <div className="hero">
-        <img src="/hero-bg11.jpg" alt="Hero Background" className="hero-image" />
+        <img src="/hero-bg8.jpg" alt="Hero Background" className="hero-image" />
         <div className="hero-overlay"></div>
 
         <nav className={navWhite ? 'bg-white' : ''}>
