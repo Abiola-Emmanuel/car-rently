@@ -973,12 +973,45 @@ footer {
   }
 
   .review {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 10px 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+  }
+
+  .rv-text {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .rv-text h3 {
+    font-size: 18px;
+  }
+
+  .reviewing {
+    font-size: 15px;
+  }
+
+  .review::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .review::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
   }
 
   .rv {
     width: 80%;
-    height: 600px;
+    height: 550px;
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    margin-right: 16px;
   }
 
   .main-questions {
