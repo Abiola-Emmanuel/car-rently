@@ -895,10 +895,14 @@ footer {
   }
 
   .hero-text-left {
-    top: 35%;
+    top: 40%;
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  .hero-text-left h2 {
+    font-size: 35px;
   }
 
   .hero-text-left p {
@@ -1063,6 +1067,20 @@ footer {
     width: 50%;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .fl-top h2 {
+    font-size: 15px;
+  }
+
+  .year p {
+    font-size: 12px;
+  }
+
+  .foot-right a {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
   }
 
 }

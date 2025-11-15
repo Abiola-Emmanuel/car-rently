@@ -47,7 +47,7 @@ const HomePage = () => {
       {/* HERO */}
 
       <div className="hero">
-        <img src="/hero-bg8.jpg" alt="Hero Background" className="hero-image" />
+        <img src="/hero-bg13.jpg" alt="Hero Background" className="hero-image" />
         <div className="hero-overlay"></div>
 
         <nav className={navWhite ? 'bg-white' : ''}>
@@ -419,7 +419,7 @@ const HomePage = () => {
           </div>
 
           <div className="year">
-            <p>&copy; {currentYear} Car rental. All rights reserved.</p>
+            <p>&copy; {currentYear}. All rights reserved.</p>
           </div>
         </div>
 
