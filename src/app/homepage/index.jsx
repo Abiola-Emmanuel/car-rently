@@ -1,8 +1,10 @@
 'use client';
 import CarCard from "@/components/CarCard";
 import "../globals.css";
-import { FaTrophy, FaRoad, FaTag, FaMapPin, FaQuoteRight, FaInstagram, FaFacebook, FaDiscord, FaTiktok } from "react-icons/fa";
+import { FaTrophy, FaRoad, FaTag, FaMapPin, FaInstagram, FaFacebook, FaDiscord, FaTiktok } from "react-icons/fa";
+import { RiMenu3Fill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import ReviewerCard from "@/components/ReviewerCard";
 import Accordion from "@/components/Accordion";
@@ -18,7 +20,8 @@ const HomePage = () => {
   })
 
   const [navWhite, setNavWhite] = useState(false);
-  const [currentYear, setCurrentYear] = useState("")
+  const [currentYear, setCurrentYear] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
 
@@ -35,18 +38,35 @@ const HomePage = () => {
     return () => window.removeEventListener('scroll', handleScroll)
 
   })
+
+
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
   }, []);
 
+  const handleCloseMenu = () => {
+    setMenuOpen(false);
+  };
 
+  const handleOpenMenu = () => {
+    setMenuOpen(true)
+  }
 
   return (
-    <div>
+    <div className="hero-main">
+
+      <div className="menuOverlay" style={{ opacity: menuOpen ? 1 : 0, pointerEvents: menuOpen ? 'auto' : 'none' }}>
+        <button className="close" onClick={handleCloseMenu}>
+          <IoCloseOutline />
+        </button>
+        <a href="/">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">OUR FLEET</a>
+      </div>
 
       {/* HERO */}
 
-      <div className="hero">
+      <div className="hero" id="hero">
         <img src="/hero-bg13.jpg" alt="Hero Background" className="hero-image" />
         <div className="hero-overlay"></div>
 
@@ -63,13 +83,20 @@ const HomePage = () => {
           </div>
 
           <div className="nav-links">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="#">About Us</a>
             <a href="#">Our Fleet</a>
           </div>
 
-          <div className="book">
-            <a href="#">Book Now</a>
+          <div className="nav-right">
+            <div className="book">
+              <a href="#">Book Now</a>
+            </div>
+
+            <div className="menu">
+              <RiMenu3Fill onClick={handleOpenMenu} />
+            </div>
+
           </div>
 
         </nav>

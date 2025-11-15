@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
 body::-webkit-scrollbar {
   width: 4px;
   background-color: black;
@@ -20,6 +24,58 @@ body::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 50px;
 }
+
+.hero-main {
+  position: relative;
+}
+
+.menuOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .97);
+  z-index: 20000;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-duration);
+}
+
+.menuOverlay a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: transform var(--transition-duration);
+}
+
+.menuOverlay a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform var(--transition-duration);
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
 
 nav.bg-white {
   background-color: white;
@@ -135,6 +191,12 @@ nav a {
   transform: scale(1.1);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .book a {
   background-color: white;
   color: black;
@@ -142,6 +204,13 @@ nav a {
   border-radius: 10px;
   font-weight: 400;
   transition: background-color var(--transition-duration);
+}
+
+.menu {
+  display: none;
+  font-size: 30px;
+  padding-top: 10px;
+  cursor: pointer;
 }
 
 .hero-text-left {
@@ -880,11 +949,18 @@ footer {
   transform: translateY(-10%);
 }
 
-
 @media screen and (max-width: 850px) {
 
   .nav-links {
     display: none;
+  }
+
+  nav {
+    padding: 35px 30px;
+  }
+
+  .menu {
+    display: block;
   }
 
   .hero-actions a {
