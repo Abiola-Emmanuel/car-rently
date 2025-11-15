@@ -76,7 +76,7 @@ const HomePage = () => {
 
         <div className="hero-text-left" >
           <h2>Find your perfect car.</h2>
-          <p>Choose from our modern fleet, economy cars, SUVs and luxury models, with clear <br /> pricing, flexible add‑ons and convenient pickup or delivery options.</p>
+          <p>Choose from our modern fleet, economy cars, <br /> SUVs and luxury models, with clear pricing, and convenient pickup or delivery options.</p>
         </div>
 
         <div className="hero-text-right" >
