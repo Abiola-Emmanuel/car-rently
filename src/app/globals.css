@@ -26,6 +26,15 @@ nav.bg-white {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+nav svg {
+  fill: white;
+  transition: fill var(--transition-duration);
+}
+
+nav.bg-white svg {
+  fill: black;
+}
+
 nav.bg-white a {
   color: black;
 }
@@ -39,13 +48,28 @@ nav.bg-white .book a {
   color: white;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo svg {
+  height: 30px;
+}
+
+.logo a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.hero img {
+.hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
